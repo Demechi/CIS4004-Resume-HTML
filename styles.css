@@ -1,0 +1,116 @@
+/* ---------- Global Reset ---------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------- Base Styles (Mobile First) ---------- */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f6f8;
+    color: #333;
+    padding: 16px;
+}
+
+header {
+    text-align: center;
+    background-color: #1f2933;
+    color: white;
+    padding: 24px 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+}
+
+header a {
+    color: #93c5fd;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+section {
+    background-color: white;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+section h2 {
+    font-size: 1.3rem;
+    color: #1f2933;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 6px;
+}
+
+article h3 {
+    font-size: 1.1rem;
+    margin-top: 12px;
+}
+
+ul {
+    margin-left: 20px;
+    margin-top: 8px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+a {
+    color: #2563eb;
+}
+
+/* ---------- Desktop / Laptop Layout ---------- */
+@media (min-width: 768px) {
+
+    body {
+        padding: 40px;
+    }
+
+    main {
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    header {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    section {
+        padding: 24px;
+    }
+
+    section h2 {
+        font-size: 1.4rem;
+    }
+}
+
+/* ---------- Large Desktop (1920px+) ---------- */
+@media (min-width: 1400px) {
+
+    main {
+        max-width: 1200px;
+    }
+
+    body {
+        font-size: 1.05rem;
+    }
+}
